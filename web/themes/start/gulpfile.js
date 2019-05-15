@@ -6,11 +6,11 @@ const browserSync = require('browser-sync').create();
 
 function style() {
     //find my scss file
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./assets/sass/**/*.scss')
     //pas thtat file through sass compiler
     .pipe(sass())
     //where to save compiled CSS
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./dist/css'))
     // stream changes to all browsers
     .pipe(browserSync.stream());
 }
@@ -22,9 +22,9 @@ function watch() {
       }
   }); 
   
-  gulp.watch('./sass/**/*.scss', style);
+  gulp.watch('./assets/sass/**/*.scss', style);
   gulp.watch('./*.html').on('change', browserSync.reload);
-  gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('./dist/js/**/*.js').on('change', browserSync.reload);
 }
 
 exports.style = style;
