@@ -1,4 +1,27 @@
-body{ 
-    color: red;
-    background: green;
+.c-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    height: 100px;
+}
+
+.c-nav-ul{
+    display: flex;
+    justify-content:  space-around;
+
+    li{
+        list-style-type: none;
+
+        a{
+            padding: 42px 35px;
+            text-decoration: none;
+            @extend %color-w;
+            &:hover{
+                @extend %bg-green-hover;
+            }
+        }
+    }
+
 }
