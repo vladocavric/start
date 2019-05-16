@@ -1,8 +1,6 @@
-//components
-@import 'components/_components.nav.scss';
 
 //elements
-@import './elements/elements.images.scss';
+@import './elements/_elements.images.scss';
 
 //generic
 @import './generic/_generic.box-sizing.scss';
@@ -12,8 +10,13 @@
 @import './generic/_generic.fonts.scss';
 
 //settings
-@import './settings/settings.color.scss';
+@import './settings/_settings.color.scss';
+@import './settings/_settings.core.scss';
 
 //utilities
-@import './utilities/utilities.helpers.scss';
+@import './utilities/_utilities.helpers.scss';
+// @import './utilities/_utilities.hide.scss';
 
+//components
+@import 'components/_components.text.scss';
+@import 'components/_components.nav.scss';

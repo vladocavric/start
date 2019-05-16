@@ -1,21 +1,4 @@
 @charset "UTF-8";
-.c-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
-  position: sticky;
-  height: 100px; }
-
-.c-nav-ul {
-  display: flex;
-  justify-content: space-around; }
-  .c-nav-ul li {
-    list-style-type: none; }
-    .c-nav-ul li a {
-      padding: 42px 35px;
-      text-decoration: none; }
-
 /* ==========================================================================
    #IMAGES
    ========================================================================== */
@@ -223,15 +206,84 @@ fieldset {
   font-weight: bold;
   font-style: italic; }
 
-.bg-green {
+* {
+  font-family: 'Poppins', sans-serif; }
+
+.u-bg-green {
   background-color: #008800; }
 
 .c-nav-ul li a:hover {
   background-color: #00ad00; }
 
-.color-w,
+.u-bg-w {
+  background-color: #fff; }
+
+.u-bg-b {
+  background-color: #000; }
+
+.u-color-w,
 .c-nav-ul li a {
   color: #fff; }
 
-.color-b {
+.u-color-b {
   color: #000; }
+
+.c-txt-trans-u {
+  text-transform: uppercase; }
+
+.c-txt-trans-l {
+  text-transform: lowercase; }
+
+.c-txt-trans-c {
+  text-transform: capitalize; }
+
+.c-txt-align-c {
+  text-align: center; }
+
+.c-txt-align-l {
+  text-align: left; }
+
+.c-txt-align-r {
+  text-align: right; }
+
+.c-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  height: 10vh; }
+
+.c-nav-ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%; }
+  @media screen and (max-width: 992px) {
+    .c-nav-ul {
+      position: absolute;
+      right: 0;
+      height: 90vh;
+      top: 10vh;
+      background-color: #008800;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 350px; } }
+  .c-nav-ul li {
+    list-style-type: none; }
+    .c-nav-ul li a {
+      padding: 39px 35px;
+      text-decoration: none; }
+      @media screen and (max-width: 992px) {
+        .c-nav-ul li a {
+          display: block;
+          text-align: center; } }
+
+.c-nav-burger {
+  display: none; }
+  @media screen and (max-width: 992px) {
+    .c-nav-burger {
+      display: block; } }
+  .c-nav-burger div {
+    width: 25px;
+    height: 3px;
+    margin: 7px; }
