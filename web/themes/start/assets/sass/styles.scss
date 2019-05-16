@@ -8,7 +8,8 @@
 @import './generic/_generic.box-sizing.scss';
 
 //generic
-@import './generic/generic.reset.scss';
+@import './generic/_generic.reset.scss';
+@import './generic/_generic.fonts.scss';
 
 //settings
 @import './settings/settings.color.scss';
