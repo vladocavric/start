@@ -1,6 +1,7 @@
 
 //elements
 @import './elements/_elements.images.scss';
+@import './elements/_elements.body.scss';
 
 //generic
 @import './generic/_generic.box-sizing.scss';
@@ -12,6 +13,7 @@
 //settings
 @import './settings/_settings.color.scss';
 @import './settings/_settings.core.scss';
+@import './settings/_settings.global.scss';
 
 //utilities
 @import './utilities/_utilities.helpers.scss';

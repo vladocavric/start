@@ -20,14 +20,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 350px;
-       
-
+        justify-content:  start;
+        width: 50%;
+        transform: translateX(100%);
+        transition: $global-transition;
+    }
+    @media screen and (max-width: 550px) {
+        width: 100%;
+        height: auto;
     }
   
 
     li{
         list-style-type: none;
+        width: 100%;
+        @media screen and (max-width: 992px) {
+            opacity: 0;
+        }
      
 
         a{
@@ -40,16 +49,19 @@
             @media screen and (max-width: 992px) {
                 display: block;
                 text-align: center;
-                // width:350px;
-                // padding: 39px 175px;
             }
         }
     }
 
 }
 
+.nav-active{
+    transform: translateX(0);
+}
+
 .c-nav-burger{
     display: none;
+    cursor: pointer;
     @media screen and (max-width: 992px) {
         display: block;
         }
