@@ -274,7 +274,7 @@ fieldset {
       justify-content: start;
       width: 50%;
       transform: translateX(100%);
-      transition: all 500ms ease-in-out; } }
+      transition: transform 0.5s ease-in; } }
   @media screen and (max-width: 550px) {
     .c-nav-ul {
       width: 100%;
@@ -306,3 +306,11 @@ fieldset {
     width: 25px;
     height: 3px;
     margin: 7px; }
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: rotateX(0px); } }
