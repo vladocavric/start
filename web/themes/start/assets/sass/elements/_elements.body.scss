@@ -1,5 +1,5 @@
 body{
-    @media screen and (max-width: 992px) {
+    @include mq($tablet) {
         overflow: hidden;
     }
 }
