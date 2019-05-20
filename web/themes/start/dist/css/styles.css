@@ -274,7 +274,7 @@ fieldset {
       justify-content: start;
       width: 50%;
       transform: translateX(100%);
-      transition: transform 0.5s ease-in; } }
+      transition: transform 0.6s ease-in; } }
   @media screen and (max-width: 576px) {
     .c-nav-ul {
       width: 100%;
@@ -284,16 +284,19 @@ fieldset {
     width: 100%; }
     @media screen and (max-width: 992px) {
       .c-nav-ul li {
-        opacity: 0; } }
+        opacity: 1;
+        animation-duration: 1s; }
+        .c-nav-ul li:hover {
+          animation-name: navLinksFade; } }
     .c-nav-ul li a {
-      padding: 39px 35px;
+      padding: 41px 35px;
       text-decoration: none; }
       @media screen and (max-width: 992px) {
         .c-nav-ul li a {
           display: block;
           text-align: center; } }
 
-.nav-active {
+.c-nav-active {
   transform: translateX(0); }
 
 .c-nav-burger {
@@ -305,12 +308,17 @@ fieldset {
   .c-nav-burger div {
     width: 25px;
     height: 3px;
-    margin: 7px; }
+    margin: 7px;
+    transition: transform 0.4s; }
+  .c-nav-burger .c-nav-burger-l1-x {
+    transform: matrix(1, 1, -1, 1, 0, 10); }
+  .c-nav-burger .c-nav-burger-l2-x {
+    visibility: hidden; }
+  .c-nav-burger .c-nav-burger-l3-x {
+    transform: matrix(1, -1, 1, 1, 0, -10); }
 
 @keyframes navLinksFade {
   from {
-    opacity: 0;
-    transform: translateX(50px); }
+    opacity: 0; }
   to {
-    opacity: 1;
-    transform: rotateX(0px); } }
+    opacity: 1; } }
