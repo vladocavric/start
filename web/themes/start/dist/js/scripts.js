@@ -12,9 +12,14 @@ const navSlide = () => {
         burgerL2.classList.toggle('c-nav-burger-l2-x');
         burgerL3.classList.toggle('c-nav-burger-l3-x');
 
-        navLinks.forEach((link, index) => {
-            link.style.animation = '2s ease forwards navLinksFade ';
-            
+        navLinks.forEach((link, i) => {
+            if(link.style.animation){
+                link.style.animation = '';
+            } else{
+                
+                link.style.animation = `navLinksFade 0.5s ease forwards ${i / 7 + 0.4}s`
+            };
+           
         });
         
     });

@@ -35,7 +35,7 @@
         list-style-type: none;
         width: 100%;
         @include mq($tablet) {
-             opacity: 1;
+             opacity: 0;
              &:hover{
 
                  animation-name: navLinksFade;
@@ -47,6 +47,7 @@
             padding: 41px 35px;
             text-decoration: none;
             @extend %u-color-w;
+
             &:hover{
                 @extend %u-bg-green-hover;
             }
@@ -96,8 +97,10 @@
 @keyframes navLinksFade{
     from{
         opacity: 0;
+        transform: translateX(50px)
     }
     to{
         opacity: 1;
+        transform: translateX(0px)
     }
 }
