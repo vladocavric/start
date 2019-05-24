@@ -293,11 +293,26 @@ a {
           animation-name: navLinksFade; } }
     .c-nav-ul li a {
       padding: 41px 35px;
-      text-decoration: none; }
+      text-decoration: none;
+      position: relative; }
+      .c-nav-ul li a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: 40px;
+        transform: scaleX(0);
+        transition: transform 0.3s ease; }
+      .c-nav-ul li a:hover::before {
+        transform: scaleX(1); }
       @media screen and (max-width: 992px) {
         .c-nav-ul li a {
           display: block;
-          text-align: center; } }
+          text-align: center; }
+          .c-nav-ul li a::before {
+            display: none; } }
 
 .c-nav-active {
   transform: translateX(0); }
