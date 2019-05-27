@@ -31,7 +31,6 @@ const navSlide = () => {
 $(document).ready(function() {
     navSlide();
     // slickInit();
-    console.log("some");
 });
 
 
