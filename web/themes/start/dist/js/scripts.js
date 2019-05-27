@@ -27,16 +27,23 @@ const navSlide = () => {
 
 }
 
-// function slickInit() {
-//     $('.slider-hereo').slick({
-//         infinite: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         console.log("slick")
-// }
 
 $(document).ready(function() {
     navSlide();
-    
+    // slickInit();
+    console.log("some");
 });
 
+
+// function slickInit() {
+//     $('.slider-hereo').slick({
+//         dots: true,
+//         infinite: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+       
+//             }
+//         ]
+       
+//     })
+// }
