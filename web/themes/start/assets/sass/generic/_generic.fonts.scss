@@ -198,3 +198,14 @@
     font-weight: bold;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: 'slick';
+    src: url('../../assets/fonts/slick/slick.eot');
+    src: url('../../assets/fonts/slick/slick.eot?#iefix') format('embedded-opentype'),
+        // url('../../assets/fonts/Poppins/Poppins-Black.woff2') format('woff2'),
+        url('../../assets/fonts/slick/slick.woff') format('woff'),
+        url('../../assets/fonts/slick/slick.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

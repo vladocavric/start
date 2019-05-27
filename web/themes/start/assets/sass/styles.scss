@@ -20,7 +20,13 @@
 //utilities
 @import './utilities/_utilities.helpers.scss';
 // @import './utilities/_utilities.hide.scss';
+@import './utilities/_utilities.test.scss';
 
 //components
 @import 'components/_components.text.scss';
 @import 'components/_components.nav.scss';
+
+//libraries
+@import 'libraries/_slick.scss';
+@import 'libraries/_slick-theme.scss';
+@import 'libraries/_slick-custom.scss';

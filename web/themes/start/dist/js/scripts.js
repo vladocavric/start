@@ -1,3 +1,4 @@
+// navigation responsive animation
 const navSlide = () => {
     const burger = document.querySelector('.c-nav-burger');
     const nav = document.querySelector('.c-nav-ul');
@@ -26,6 +27,16 @@ const navSlide = () => {
 
 }
 
-navSlide();
+// function slickInit() {
+//     $('.slider-hereo').slick({
+//         infinite: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         console.log("slick")
+// }
 
-//0.5s ease forwards ${index / 7 + 3}s
+$(document).ready(function() {
+    navSlide();
+    
+});
+

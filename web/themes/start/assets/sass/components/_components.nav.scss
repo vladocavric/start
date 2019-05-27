@@ -8,9 +8,10 @@
 }
 
 .c-nav-ul{
+    flex-grow: 1;
     display: flex;
-    justify-content:  space-around;
-    width: 30%;
+    justify-content:  flex-end;
+    // width: 30%;
     @include mq($tablet) {
         position: absolute;
         right: 0;
@@ -33,9 +34,10 @@
 
     li{
         list-style-type: none;
-        width: 100%;
+        // width: 100%;
         @include mq($tablet) {
              opacity: 0;
+             width: 100%;
              &:hover{
 
                  animation-name: navLinksFade;
@@ -112,6 +114,9 @@
 
 }
 
+.c-logo{
+    padding: 0 50px;
+}
 
 @keyframes navLinksFade{
     from{
