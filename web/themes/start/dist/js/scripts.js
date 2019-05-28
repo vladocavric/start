@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    navSlide();
+    slickInit();
+    slickPromoInit()
+});
+
 // navigation responsive animation
 const navSlide = () => {
     const burger = document.querySelector('.c-nav-burger');
@@ -28,21 +34,26 @@ const navSlide = () => {
 }
 
 
-$(document).ready(function() {
-    navSlide();
-    // slickInit();
-});
-
-
-// function slickInit() {
-//     $('.slider-hereo').slick({
-//         dots: true,
-//         infinite: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
+function slickInit() {
+    $('.slider-hero').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 8000,
        
-//             }
-//         ]
-       
-//     })
-// }
+            });
+        }
+
+        function slickPromoInit() {
+            $('.slider-promo').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 10000,
+               
+                    });
+                }
