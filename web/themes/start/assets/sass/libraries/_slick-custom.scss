@@ -8,16 +8,14 @@
 }
 
 .slick-slide {
-    padding: 100px;
+    padding: 100px 0;
     margin: 20px;
     background-color: green; 
 }
 
 .slider-hero{
-
     & > div{
         background-color: red;
- 
     }
 
     .slick-slide{
@@ -28,9 +26,6 @@
 }
 
 .slider-promo{
-    & > div{
-        // background-color: green;   
-    }
     .slick-slide{
         border: 2px solid black;
     }
