@@ -275,9 +275,9 @@ a {
   @media screen and (max-width: 992px) {
     .c-nav-ul {
       position: absolute;
-      right: 0;
-      height: 90vh;
       top: 10vh;
+      right: 0;
+      height: auto;
       background-color: #008800;
       display: flex;
       flex-direction: column;
