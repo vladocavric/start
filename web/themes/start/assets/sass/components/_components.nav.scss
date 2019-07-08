@@ -121,8 +121,7 @@
   display: flex;
   flex-direction: column;
   background-color: $green;
-//   width: 100%;
-//   min-width: 160px;
+  top: 100%;
   text-align: center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   visibility: hidden;
@@ -133,6 +132,7 @@
     position: relative;
     transform: translateX(0%);
     display: none;
+    top: 0;
    
     }
 }
@@ -144,11 +144,11 @@
   }
 }
 
-// #d-none-tablet{
-//     // @include mq($tablet) {
-//        display: none;
-//     // }
-// }
+#d-none-tablet{
+    @include mq($tablet) {
+       display: none;
+    }
+}
 
 .c-logo{
     padding: 0 50px;

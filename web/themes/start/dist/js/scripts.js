@@ -12,12 +12,15 @@ const navSlide = () => {
     const burgerL1 = document.querySelector('.c-nav-burger-l1');
     const burgerL2 = document.querySelector('.c-nav-burger-l2');
     const burgerL3 = document.querySelector('.c-nav-burger-l3');
+    // const expendMenu = document.querySelector('#d-none-tablet');
     
     burger.addEventListener('click',()=>{
         nav.classList.toggle('c-nav-active');
         burgerL1.classList.toggle('c-nav-burger-l1-x');
         burgerL2.classList.toggle('c-nav-burger-l2-x');
         burgerL3.classList.toggle('c-nav-burger-l3-x');
+        // expendMenu.idList.toggle('#d-none-tablet');
+
 
         navLinks.forEach((link, i) => {
             if(link.style.animation){
@@ -32,6 +35,8 @@ const navSlide = () => {
     });
 
 }
+
+// const navSlide = () => {}
 
 
 function slickInit() {
