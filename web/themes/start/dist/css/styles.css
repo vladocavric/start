@@ -300,7 +300,7 @@ a {
         .c-nav-ul li:hover {
           animation-name: navLinksFade; } }
     .c-nav-ul li a {
-      padding: 41px 35px;
+      padding: 35px 35px;
       text-decoration: none;
       position: relative; }
       .c-nav-ul li a::before {
@@ -310,7 +310,7 @@ a {
         height: 2px;
         background-color: #fff;
         left: 0;
-        bottom: 40px;
+        bottom: 35px;
         transform: scaleX(0);
         transition: transform 0.3s ease; }
       .c-nav-ul li a:hover::before {

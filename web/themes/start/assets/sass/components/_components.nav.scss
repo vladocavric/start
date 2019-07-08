@@ -47,7 +47,7 @@
         }
      
         a{
-            padding: 41px 35px;
+            padding: 35px 35px;
             text-decoration: none;
             position: relative;
             @extend %u-color-w;
@@ -59,7 +59,7 @@
                 height: 2px;
                 background-color: $white;
                 left: 0;
-                bottom: 40px;
+                bottom: 35px;
                 transform: scaleX(0);
                 // transform-origin: left;
                 transition: transform 0.3s ease;
@@ -142,9 +142,13 @@
   @include mq($tablet) {
       display: flex;
   }
-
-
 }
+
+// #d-none-tablet{
+//     // @include mq($tablet) {
+//        display: none;
+//     // }
+// }
 
 .c-logo{
     padding: 0 50px;
